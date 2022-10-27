@@ -1,0 +1,13 @@
+function turn_right() {
+	repeat("turn_left()",3)
+}
+
+function step() {
+	turn_left()
+	move()
+	turn_right()
+	move()
+}
+
+repeat("step()",3)
+set_color("blue")
