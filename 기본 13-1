@@ -1,0 +1,8 @@
+move()
+cnt = count_object()
+name = what_object()
+repeat("pick_object()",cnt)
+repeat("move()",2)
+repeat("put_object(name)",cnt)
+move()
+pick_object()
