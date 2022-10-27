@@ -1,0 +1,6 @@
+move()
+repeat("pick_object()",3)
+repeat("move()",2)
+repeat("put_object('토마토')",3)
+move()
+pick_object()
