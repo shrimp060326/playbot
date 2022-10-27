@@ -1,0 +1,8 @@
+move()
+print("물건 이름은" + what_object())
+print("물건의 개수는" + count_object())
+repeat("pick_object()",7)
+repeat("move()",2)
+repeat("put_object('농구공')",7)
+move()
+pick_object()
