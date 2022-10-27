@@ -1,0 +1,8 @@
+move()
+name = what_object()
+cnt = count_object()
+repeat("pick_object()",cnt)
+repeat("move()",2)
+repeat("put_object(name)",cnt)
+move()
+set_color("blue")
