@@ -1,0 +1,39 @@
+//내가 짠 코드
+function check() {
+	move()
+	a = count_beeper()
+	if(a < 5) {
+		repeat("pick_beeper()",a)
+		return a
+	}
+	else {
+		return 0
+	}
+}
+
+cnt = 0
+cnt += check()
+cnt += check()
+move()
+repeat("put_beeper()",cnt)
+move()
+put_object("도착")
+
+//정석 코드
+cnt = 0
+move()
+a = count_beeper()
+if(a < 5) {
+	cnt = cnt + a
+	repeat("pick_beeper()",a)
+}
+move()
+a = count_beeper()
+if(a < 5) {
+	cnt = cnt + a
+	repeat("pick_beeper()",a)
+}
+move()
+repeat("put_beeper()", cnt)
+move()
+put_object("도착")
