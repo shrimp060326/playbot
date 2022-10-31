@@ -1,0 +1,8 @@
+print("앞쪽 벽 : " + front_is_wall())
+print("뒤쪽 벽 : " + back_is_wall())
+print("왼쪽 벽 : " + left_is_wall())
+print("오른쪽 벽 : " + right_is_wall())
+move()
+repeat("turn_left()",3)
+move()
+pick_object()
