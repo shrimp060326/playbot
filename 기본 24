@@ -1,0 +1,13 @@
+a = front_is_clear()
+
+if(a == true) {
+	print("앞쪽 탈출 가능")
+}
+if(a == false) {
+	print("앞쪽 탈출 불가능")
+}
+repeat("turn_left()",2)
+move()
+repeat("turn_left()",3)
+move()
+set_color("blue")
