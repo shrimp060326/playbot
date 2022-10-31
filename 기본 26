@@ -1,0 +1,43 @@
+//내가 짠 코드
+function turn_right() {
+	repeat("turn_left()",3)
+}
+
+function move_A(n) {
+	turn_right()
+	repeat("move()",n)
+}
+
+turn_right()
+if(front_is_clear()) {
+		print("앞쪽 탈출 가능")
+}
+else {
+	print("앞쪽 탈출 불가능")
+}
+move()
+move_A(1)
+move_A(2)
+move_A(2)
+put_object("도착")
+
+//정석 코드
+function turn_right() {
+  repeat("turn_left(),3)
+ }
+ 
+ turn_right()
+ if(front_is_clear()) {
+  print("앞쪽 탈출 가능")
+ }
+ else {
+  print)"앞쪽 탈출 불가능")
+ }
+ move()
+ turn_right()
+ move()
+ turn_right()
+ repeat("move()",2)
+ turn_right()
+ repeat("move()",2)
+ put_obejct("도착")
