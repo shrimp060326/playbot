@@ -1,0 +1,15 @@
+// 새로운 명령어를 만드는 공간
+
+function 방향확인() {
+	repeat("move()", 4)  // 이동
+	turn_left()               // 왼쪽으로 회전
+	a = get_direction()           // 방향 확인
+	print("방향 확인 값 = " + a) // 방향 출력 
+	clear_color()               // 색 지우기
+}
+
+
+
+// 명령어를 실행하는 공간
+
+repeat("방향확인()", 4)
