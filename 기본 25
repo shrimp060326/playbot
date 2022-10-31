@@ -1,0 +1,12 @@
+a = front_is_clear()
+
+if(a == true) {
+	print("앞쪽 탈출 가능")
+}
+else {
+	print("앞쪽 탈출 불가능")
+}
+move()
+turn_left()
+move()
+pick_object()
