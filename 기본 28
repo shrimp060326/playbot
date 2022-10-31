@@ -33,6 +33,7 @@ if(a >= 7) {
 	cnt = cnt + a
 	repeat("pick_beeper()",a)
 }
+move()
 a = count_beeper()
 if(a >= 7) {
 	cnt = cnt + a
