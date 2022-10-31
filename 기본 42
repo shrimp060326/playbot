@@ -1,0 +1,14 @@
+a = []
+a[0] = "유재석"
+a[1] = "강호동"
+a[2] = "신동엽"
+a[3] = "김연아"
+a[4] = "손연재"
+b = a.length
+print("출연하는 연예인은 " + b + "명 입니다.")
+for (i = 0; i < b; i++) {
+	print(a[i])
+	set_text(i)
+	move()
+}
+put_object("도착")
