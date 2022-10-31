@@ -1,0 +1,58 @@
+//내가 짠 코드
+function turn_right() {
+	repeat("turn_left()",3)
+}
+function move_A(n) {
+	repeat("move()",n)
+	turn_right()
+}
+for(i = 2; i <= 3; i++) {
+	move_A(i)
+}
+move()
+print("X의 좌표는 " + get_x())
+print("Y의 좌표는 " + get_y())
+a = get_direction()
+if(a==0) {
+	print("방향은 동쪽")
+}
+else if (a == 1) {
+	print("방향은 북쪽")
+}
+else if (a == 2) {
+	print("방향은 서쪽")
+}
+else {
+	print("방향은 남쪽")
+}
+turn_right()
+repeat("move()",2)
+set_color("blue")
+
+//정석 코드
+function turn_right() {
+	repeat("turn_left()",3)
+}
+repeat("move()",2)
+turn_right()
+repeat("move()",3)
+turn_right()
+move()
+print("X의 좌표는 " + get_x())
+print("Y의 좌표는 " + get_y())
+a = get_direction()
+if(a==0) {
+	print("방향은 동쪽")
+}
+else if (a == 1) {
+	print("방향은 북쪽")
+}
+else if (a == 2) {
+	print("방향은 서쪽")
+}
+else {
+	print("방향은 남쪽")
+}
+turn_right()
+repeat("move()",2)
+set_color("blue")
