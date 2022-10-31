@@ -1,0 +1,7 @@
+for(i = 1; i<= 4; i++) {
+	move()
+	say(get_color())
+}
+turn_left()
+move()
+pick_object()
