@@ -23,7 +23,7 @@ put_object("도착")
 
 //정석 코드
 function turn_right() {
-  repeat("turn_left(),3)
+  repeat("turn_left()",3)
  }
  
  turn_right()
@@ -31,7 +31,7 @@ function turn_right() {
   print("앞쪽 탈출 가능")
  }
  else {
-  print)"앞쪽 탈출 불가능")
+  print("앞쪽 탈출 불가능")
  }
  move()
  turn_right()
@@ -40,4 +40,4 @@ function turn_right() {
  repeat("move()",2)
  turn_right()
  repeat("move()",2)
- put_obejct("도착")
+ put_object("도착")
