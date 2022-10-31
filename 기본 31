@@ -1,0 +1,18 @@
+//내가 짠 코드
+function move_A(n) {
+	repeat("move()",n)
+	turn_left()
+	print("방향 확인 값 = " + get_direction())
+	clear_color()
+}
+
+for(i = 2; i <= 3; i++) {
+	move_A(i)
+}
+move_A(1)
+move_A(3)
+turn_left()
+repeat("move()",4)
+turn_left()
+move()
+pick_object()
