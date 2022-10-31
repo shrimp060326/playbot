@@ -1,0 +1,6 @@
+print("앞쪽문 : " + front_is_door())
+print("뒤쪽문 : " + back_is_door())
+print("오른쪽문 : " + right_is_door())
+print("왼쪽문 : " + left_is_door())
+set_color("red")
+turn_left()
