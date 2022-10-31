@@ -1,0 +1,17 @@
+a = [
+	 ["현아","신우","태우","보영"],
+	 ["민아","산들","호영","영수"]]
+b = a.length
+print("줄의 개수는 " + b)
+for(i = 0; i <= b - 1; i++) {
+	p = "a[" + i + "]"
+	for(j = 0; j <= b + 1; j++) {
+		q = "[" + j + "] = "
+		print(p+q+a[i][j])
+		set_text(i,j,i*5 + j)
+		set_color(i, j , "pink")
+	}
+	move()
+}
+put_object("도착")
+move()
