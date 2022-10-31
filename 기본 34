@@ -1,0 +1,47 @@
+// 내가 짠 코드
+function turn_right() {
+	repeat("turn_left()",3)
+}
+function move_A() {
+	if(front_is_wall() && right_is_wall()) {
+		turn_left()
+	}
+	else if(front_is_wall() && left_is_wall()) {
+		turn_right()
+	}
+	else if(front_is_door()) {
+		open_door()
+	}
+	else {
+		move()
+	}
+	if(!on_object()) {
+		move_A()
+	}
+	else {
+		pick_object()
+	}
+}
+move_A()
+// 정석 코드
+function turn_right() {
+	repeat("turn_left()",3)
+}
+while(1) {
+	if(front_is_wall() && right_is_wall()) {
+		turn_left()
+	}
+	else if(front_is_wall() && left_is_wall()) {
+		turn_right()
+	}
+	else if(front_is_door()) {
+		open_door()
+	}
+	else {
+		move()
+	}
+	if(on_object()) {
+		pick_object()
+		break
+	}
+}
