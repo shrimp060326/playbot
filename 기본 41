@@ -1,0 +1,31 @@
+a = get_random(0, 4)
+switch (a) {
+	case(1):
+		b="도"
+		break
+	case(2):
+		b="개"
+		break
+	case(3):
+		b="걸"
+		break
+	case(4):
+        b="윷"
+		break
+	default:
+		b="모"
+}
+
+c = "윷을 던지세요."
+say(c)
+popup(b)
+if(a == 0) {
+	d = 5
+}
+else {
+	d = a
+}
+repeat("move()",d)
+put_object("흰바둑알")
+repeat("move()",9-d)
+set_color("blue")
