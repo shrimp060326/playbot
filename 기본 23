@@ -1,0 +1,40 @@
+//내가 짠 코드
+function turn(cnt) {
+	repeat("turn_left()",cnt)
+}
+function move_A() {
+	turn(3)
+	repeat("move()",2)
+}
+
+turn(2)
+open_door()
+move()
+turn(2)
+close_door()
+turn_left()
+move()
+repeat("move_A()",3)
+pick_object()
+
+//정석 코드
+function turn_around() {
+  repeat("turn_left()",2)
+ }
+ function turn_right() {
+  repeat("turn_left()",3)
+ }
+ turn_around()
+ open_door()
+ move()
+ turn_around()
+ close_door()
+ turn_left()
+ move()
+ turn_right()
+ repeat("move()",2)
+ turn_right()
+ repeat("move()",2)
+ turn_right()
+ repeat("move()",2)
+ pick_object()
