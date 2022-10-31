@@ -1,0 +1,18 @@
+// 새로운 명령어를 만드는 공간
+
+function 장애물확인후이동() {
+	a = front_is_wall()
+	b = front_is_door()
+	
+	// ▦▦ 네모 블록을 지우고 논리연산자로 변경하세요.
+	if (a==false && b==true) { 
+		open_door()
+	} 
+	move()
+	if(!on_object())
+		장애물확인후이동()
+}
+
+// 명령어를 실행하는 공간
+장애물확인후이동()
+pick_object()
