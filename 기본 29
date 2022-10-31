@@ -1,0 +1,46 @@
+//내가 짠 코드
+function find_door() {
+  	a = front_is_door()
+  	if (a == true) {
+  		open_door()
+		move()
+  	} else {
+  		turn_left()
+		find_door()
+	}
+}
+
+function turn_right() {
+	repeat("turn_left()",3)
+}
+
+find_door()
+turn_right()
+move()
+turn_right()
+repeat("move()",2)
+set_color("blue")
+
+//정석 코드
+function find_door() {
+  	a = front_is_door()
+  	if (a == true) {
+  		open_door()
+		move()
+  	} else {
+  		turn_left()
+	}
+}
+
+function turn_right() {
+	repeat("turn_left()",3)
+}
+
+repeat("find_door()",4)
+turn_right()
+move()
+turn_right()
+move()
+move()
+set_color("blue")
+
